@@ -44,7 +44,7 @@ candidates in this file, but the code to generate them has already been made. To
 generate the file, run the following from the root of the lab:
 
 ```bash
-cargo run --examples generate-candidates
+cargo run --example generate-candidates
 ```
 
 This will place the `candidates.txt` file at the root of the project. Note, this
