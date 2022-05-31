@@ -47,7 +47,7 @@ impl Candidate {
     /// Loads the candidates from the candidates.txt file into a vector
     pub fn load_candidate_file() -> Vec<Candidate> {
         // Open the file candidates.txt
-        let file = File::open("../candidates.txt").expect("Failed to open candidates.txt");
+        let file = File::open("candidates.txt").expect("Failed to open candidates.txt");
 
         io::BufReader::new(file) // Create a buffered reader
             .lines() // Iterate over the lines

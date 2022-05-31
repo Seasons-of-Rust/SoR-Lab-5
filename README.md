@@ -51,6 +51,11 @@ This will place the `candidates.txt` file at the root of the project. Note, this
 file has been added to the `.gitignore` file, so it won't show up when you go to
 commit your work.
 
+Also note, when running your program with `cargo run`, make sure you're doing it
+from the root of the project, and you're not in the `space-agency` directory.
+This is because the program will look for the `candidates.txt` file in the same
+folder you're in, and it won't find it if you're in the `space-agency` directory.
+
 The file that generates the candidates is part of the `personnel` crate. You
 don't need to make any changes to it, but feel free to [take a look at it
 here](personnel/examples/generate-candidates.rs).
